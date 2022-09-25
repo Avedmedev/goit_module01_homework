@@ -1,9 +1,9 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 import pickle
 import json
 
 
-class SerializationInterface(metaclass=ABCMeta):
+class SerializationInterface(ABC):
     @abstractmethod
     def read(self, filename):
         ...
